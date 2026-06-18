@@ -1,129 +1,408 @@
-# TripReady Privacy Policy
+<!DOCTYPE html>
 
-Last updated: June 19, 2026
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TripReady Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the TripReady mobile app." />
 
-This Privacy Policy explains how the “TripReady” mobile application handles user data.
+  <style>
+    :root {
+      --background: #f6f8f7;
+      --surface: #ffffff;
+      --text: #17211f;
+      --muted: #66736f;
+      --primary: #0f766e;
+      --primary-soft: #e0f2f1;
+      --border: #dbe5e2;
+      --shadow: rgba(15, 23, 42, 0.08);
+    }
 
-TripReady is a packing and travel checklist app designed to help users create trip checklists, packing lists, travel document reminders and before-you-go task lists.
+    * {
+      box-sizing: border-box;
+    }
 
-TripReady does not require an account, does not use cloud sync and does not send trip or checklist data to an external server.
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.65;
+    }
 
-## 1. Personal Data Collected
+    .page {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 18px;
+    }
 
-TripReady does not ask users to provide their name, surname, email address, phone number, location, identity information, account information or similar personal data.
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 16px 40px var(--shadow);
+      overflow: hidden;
+    }
 
-The app does not include user registration, login, membership or account creation.
+    .hero {
+      padding: 42px 34px;
+      background: linear-gradient(135deg, #0f766e, #0d9488);
+      color: #ffffff;
+    }
 
-## 2. Trip and Checklist Information Entered in the App
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
 
-Users may enter trip-related information inside the app, such as:
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
 
-* Trip name
-* Destination
-* Travel date
-* Trip duration
-* Number of travelers
-* Selected packing list type
-* Custom packing list names
-* Custom checklist items
-* Checklist progress
+    .hero p {
+      max-width: 680px;
+      margin: 18px 0 0;
+      color: #dff5f2;
+      font-size: 17px;
+    }
 
-This information is used only to create and manage packing and travel checklists on the user’s device.
+    .content {
+      padding: 34px;
+    }
 
-This information:
+    .updated {
+      display: inline-block;
+      margin-bottom: 26px;
+      padding: 10px 14px;
+      border-radius: 14px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: 700;
+    }
 
-* Is stored locally on the user’s device
-* Is not sent to an external server
-* Is not shared with third parties
-* Is not sold, rented or used for advertising
-* Is not used to identify or track the user
+    section {
+      padding: 22px 0;
+      border-top: 1px solid var(--border);
+    }
 
-## 3. Local Storage
+    section:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
 
-TripReady stores trips, packing lists, custom checklist items, checklist progress and language preferences locally on the user’s device.
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
 
-Because the app does not use cloud sync, this data is not automatically backed up or synchronized between devices by TripReady.
+    p {
+      margin: 0 0 14px;
+    }
 
-If the user deletes the app or resets the app data, locally stored TripReady data may be deleted.
+    ul {
+      margin: 10px 0 16px;
+      padding-left: 22px;
+    }
 
-## 4. Data Sharing
+    li {
+      margin: 6px 0;
+    }
 
-TripReady does not share, sell, rent or transfer user data to third parties.
+    .note {
+      padding: 16px;
+      border-radius: 16px;
+      background: #f8faf9;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
 
-The app does not use user data for behavioral advertising, profiling, tracking or analytics.
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+      word-break: break-word;
+    }
 
-## 5. Advertising and Analytics
+    .footer {
+      margin-top: 18px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
 
-This version of TripReady does not include:
+    a {
+      color: var(--primary);
+    }
 
-* Advertising SDKs
-* Analytics SDKs
-* User tracking tools
-* Behavioral profiling
-* Remote data collection systems
-* Cloud backend services
+    @media (max-width: 640px) {
+      .page {
+        padding: 20px 12px;
+      }
 
-If advertising, analytics, crash reporting, cloud sync or similar third-party services are added in a future version, this Privacy Policy will be updated accordingly.
+      .hero {
+        padding: 32px 22px;
+      }
 
-## 6. Permissions
+      .content {
+        padding: 24px 20px;
+      }
 
-TripReady does not request access to sensitive device permissions such as:
+      h2 {
+        font-size: 20px;
+      }
 
-* Location
-* Camera
-* Microphone
-* Contacts
-* Calendar
-* SMS
-* Photos
-* Files
-* Bluetooth
-* Health data
+      .contact {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        border-radius: 16px;
+      }
+    }
+  </style>
 
-The app is designed to work as an offline checklist utility without requiring sensitive device access.
+</head>
 
-## 7. Children’s Privacy
+<body>
+  <main class="page">
+    <article class="card">
+      <header class="hero">
+        <div class="badge">🧳 TripReady</div>
+        <h1>Privacy Policy</h1>
+        <p>
+          This Privacy Policy explains how the TripReady mobile application handles user data.
+        </p>
+      </header>
 
-TripReady is a general travel checklist utility.
+```
+  <div class="content">
+    <div class="updated">Last updated: June 19, 2026</div>
 
-The app does not knowingly collect personal data from children. Since TripReady does not require an account and does not collect personal data, children are not asked to submit personal information through the app.
+    <section>
+      <p>
+        TripReady is a packing and travel checklist app designed to help users create trip checklists,
+        packing lists, travel document reminders and before-you-go task lists.
+      </p>
+      <p>
+        TripReady does not require an account, does not use cloud sync and does not send trip or checklist
+        data to an external server.
+      </p>
+    </section>
 
-If a parent or guardian believes that a child has contacted the developer and provided personal information by email, they may contact the developer to request deletion of that information.
+    <section>
+      <h2>1. Personal Data Collected</h2>
+      <p>
+        TripReady does not ask users to provide their name, surname, email address, phone number, location,
+        identity information, account information or similar personal data.
+      </p>
+      <p>
+        The app does not include user registration, login, membership or account creation.
+      </p>
+    </section>
 
-## 8. Support and Contact by Email
+    <section>
+      <h2>2. Trip and Checklist Information Entered in the App</h2>
+      <p>
+        Users may enter trip-related information inside the app, such as:
+      </p>
+      <ul>
+        <li>Trip name</li>
+        <li>Destination</li>
+        <li>Travel date</li>
+        <li>Trip duration</li>
+        <li>Number of travelers</li>
+        <li>Selected packing list type</li>
+        <li>Custom packing list names</li>
+        <li>Custom checklist items</li>
+        <li>Checklist progress</li>
+      </ul>
+      <p>
+        This information is used only to create and manage packing and travel checklists on the user’s device.
+      </p>
+      <p>This information:</p>
+      <ul>
+        <li>Is stored locally on the user’s device</li>
+        <li>Is not sent to an external server</li>
+        <li>Is not shared with third parties</li>
+        <li>Is not sold, rented or used for advertising</li>
+        <li>Is not used to identify or track the user</li>
+      </ul>
+    </section>
 
-If a user contacts the developer by email for support, feedback or questions, the user’s email address and message content may be used only to respond to that request.
+    <section>
+      <h2>3. Local Storage</h2>
+      <p>
+        TripReady stores trips, packing lists, custom checklist items, checklist progress and language
+        preferences locally on the user’s device.
+      </p>
+      <p>
+        Because the app does not use cloud sync, this data is not automatically backed up or synchronized
+        between devices by TripReady.
+      </p>
+      <p>
+        If the user deletes the app or resets the app data, locally stored TripReady data may be deleted.
+      </p>
+    </section>
 
-Such email communication is not used for marketing, advertising or profiling.
+    <section>
+      <h2>4. Data Sharing</h2>
+      <p>
+        TripReady does not share, sell, rent or transfer user data to third parties.
+      </p>
+      <p>
+        The app does not use user data for behavioral advertising, profiling, tracking or analytics.
+      </p>
+    </section>
 
-Support emails may be retained as needed to respond to the user or comply with legal obligations.
+    <section>
+      <h2>5. Advertising and Analytics</h2>
+      <p>This version of TripReady does not include:</p>
+      <ul>
+        <li>Advertising SDKs</li>
+        <li>Analytics SDKs</li>
+        <li>User tracking tools</li>
+        <li>Behavioral profiling</li>
+        <li>Remote data collection systems</li>
+        <li>Cloud backend services</li>
+      </ul>
+      <p>
+        If advertising, analytics, crash reporting, cloud sync or similar third-party services are added in
+        a future version, this Privacy Policy will be updated accordingly.
+      </p>
+    </section>
 
-## 9. Data Deletion
+    <section>
+      <h2>6. Permissions</h2>
+      <p>
+        TripReady does not request access to sensitive device permissions such as:
+      </p>
+      <ul>
+        <li>Location</li>
+        <li>Camera</li>
+        <li>Microphone</li>
+        <li>Contacts</li>
+        <li>Calendar</li>
+        <li>SMS</li>
+        <li>Photos</li>
+        <li>Files</li>
+        <li>Bluetooth</li>
+        <li>Health data</li>
+      </ul>
+      <p>
+        The app is designed to work as an offline checklist utility without requiring sensitive device access.
+      </p>
+    </section>
 
-TripReady does not create user accounts and does not store user data on an external server.
+    <section>
+      <h2>7. Children’s Privacy</h2>
+      <p>
+        TripReady is a general travel checklist utility.
+      </p>
+      <p>
+        The app does not knowingly collect personal data from children. Since TripReady does not require an
+        account and does not collect personal data, children are not asked to submit personal information
+        through the app.
+      </p>
+      <p>
+        If a parent or guardian believes that a child has contacted the developer and provided personal
+        information by email, they may contact the developer to request deletion of that information.
+      </p>
+    </section>
 
-Users can delete locally stored app data by:
+    <section>
+      <h2>8. Support and Contact by Email</h2>
+      <p>
+        If a user contacts the developer by email for support, feedback or questions, the user’s email address
+        and message content may be used only to respond to that request.
+      </p>
+      <p>
+        Such email communication is not used for marketing, advertising or profiling.
+      </p>
+      <p>
+        Support emails may be retained as needed to respond to the user or comply with legal obligations.
+      </p>
+    </section>
 
-* Using the reset option inside the app, where available
-* Deleting trips or custom lists inside the app
-* Removing the app from their device
+    <section>
+      <h2>9. Data Deletion</h2>
+      <p>
+        TripReady does not create user accounts and does not store user data on an external server.
+      </p>
+      <p>Users can delete locally stored app data by:</p>
+      <ul>
+        <li>Using the reset option inside the app, where available</li>
+        <li>Deleting trips or custom lists inside the app</li>
+        <li>Removing the app from their device</li>
+      </ul>
+      <p>
+        If a user has contacted the developer by email and wants that email communication deleted, they may
+        contact the developer using the email address below.
+      </p>
+    </section>
 
-If a user has contacted the developer by email and wants that email communication deleted, they may contact the developer using the email address below.
+    <section>
+      <h2>10. Security</h2>
+      <p>
+        TripReady is designed to keep trip and checklist data on the user’s device.
+      </p>
+      <p>
+        However, no digital storage method can be guaranteed to be completely secure. Users are responsible
+        for keeping their own devices secure.
+      </p>
+    </section>
 
-## 10. Security
+    <section>
+      <h2>11. Changes to This Privacy Policy</h2>
+      <p>
+        This Privacy Policy may be updated from time to time.
+      </p>
+      <p>
+        If changes are made, the updated Privacy Policy will be published on this page and the “Last updated”
+        date will be revised.
+      </p>
+    </section>
 
-TripReady is designed to keep trip and checklist data on the user’s device.
+    <section>
+      <h2>12. Contact</h2>
+      <p>
+        For questions, requests or feedback about this Privacy Policy, you can contact the developer at:
+      </p>
+      <a class="contact" href="mailto:ariftazegullu.developer@gmail.com">
+        ariftazegullu.developer@gmail.com
+      </a>
+    </section>
 
-However, no digital storage method can be guaranteed to be completely secure. Users are responsible for keeping their own devices secure.
+    <div class="note">
+      TripReady is an offline-first checklist utility. It does not provide official visa, passport, legal or
+      travel eligibility advice.
+    </div>
+  </div>
+</article>
 
-## 11. Changes to This Privacy Policy
+<footer class="footer">
+  © 2026 TripReady. All rights reserved.
+</footer>
+```
 
-This Privacy Policy may be updated from time to time.
-
-If changes are made, the updated Privacy Policy will be published on this page and the “Last updated” date will be revised.
-
-## 12. Contact
-
-For questions, requests or feedback about this Privacy Policy, you can contact the developer at:
-
-[ariftazegullu.developer@gmail.com](mailto:ariftazegullu.developer@gmail.com)
+  </main>
+</body>
+</html>
